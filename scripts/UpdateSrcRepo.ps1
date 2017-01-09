@@ -10,7 +10,7 @@ function CloneOrPull
       }
       else
       {
-          & git clone -q --branch=$branch $gitRepo $folderName
+          & git clone -c core.longpaths=true -q --branch=$branch $gitRepo $folderName
       }
 }
 
