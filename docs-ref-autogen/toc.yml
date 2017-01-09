@@ -1,0 +1,8 @@
+- uid: azure.createInsightsClient
+  name: createInsightsClient
+- uid: azure.createInsightsManagementClient
+  name: createInsightsManagementClient
+- uid: azure.KeyVaultClient
+  name: KeyVaultClient
+- uid: azure._global
+  name: GLOBAL
