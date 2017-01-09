@@ -29,7 +29,6 @@ before_build:
 build_script:
   - ps: if($env:is_ci_build_enabled)
         {
-          npm install scripts
           node scripts\build.js
         }
 
