@@ -6,14 +6,8 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "exclude": [
-          "**/obj/**",
-          "azure/sdk/node/**",
-          "**/includes/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE"
-        ]
+        "src": "docs-ref-autogen",
+        "dest": "."
       }
     ],
     "resource": [
