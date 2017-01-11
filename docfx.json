@@ -19,8 +19,11 @@
         "exclude": [
           "**/obj/**",
           "azure/sdk/node/**",
-          "**/includes/**"
-        ]
+          "**/includes/**",
+          "_site/**"
+        ],
+        "src": "docs-ref-autogen",
+        "dest": "."
       }
     ],
     "overwrite": [],
