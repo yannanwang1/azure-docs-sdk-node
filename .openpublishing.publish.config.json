@@ -13,8 +13,7 @@
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
-        "RestApi": "Content",
-        "JavaScriptReference ": "Content"
+        "RestApi": "Content"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes",
