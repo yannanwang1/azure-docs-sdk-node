@@ -13,6 +13,35 @@ var doc = 'Documentation';
 var configPath = 'node2docfx.json';
 var tempConfigPath = '_node2docfx_temp.json';
 
+function itemsByType(type) {
+  return packageNames.filter(function (value) {
+    return value.indexOf(type) > -1;
+  });
+}
+
+function buildTocItems(keys) {
+  return keys.sort().map(function (key) {
+    var packageToc = path.join(dest, key, 'toc.yml');
+    var href, topicHref;
+    if (fs.existsSync(packageToc)) {
+      href = path.join(key, 'toc.yml');
+    } else {
+      href = key + '/';
+    }
+    var packageIndex = path.join(dest, key, 'index.md');
+    if (fs.existsSync(packageIndex)) {
+      topicHref = path.join(key, 'index.md');
+    } else {
+      topicHref = undefined;
+    }
+    return {
+      name: key,
+      href: href,
+      topicHref: topicHref
+    };
+  });
+}
+
 // 1. prepare
 fse.removeSync(dest);
 
@@ -35,9 +64,9 @@ packageJsons.forEach(function (p) {
   console.log('Finish generating YAML files for ' + packageName);
 });
 
-// 4. Copy documentation
+// 4. copy documentation
 fse.copySync(path.join(src, doc), path.join(dest, doc));
-console.log('Finishing copying documentation');
+console.log('Finish copying documentation');
 
 // 5. generate root toc
 var toc = yaml.safeLoad(fs.readFileSync(path.join(dest, 'toc.yml')));
@@ -67,32 +96,3 @@ var groupedToc = [
 toc.unshift({ name: 'Azure SDK Packages', items: groupedToc });
 fs.writeFileSync(path.join(dest, 'toc.yml'), yaml.safeDump(toc));
 console.log('Finish combining root TOC with sub TOCs');
-
-function itemsByType(type) {
-  return packageNames.filter(function (value) {
-    return value.indexOf(type) > -1;
-  });
-}
-
-function buildTocItems(keys) {
-  return keys.sort().map(function (key) {
-    var packageToc = path.join(dest, key, 'toc.yml');
-    var href, topicHref;
-    if (fs.existsSync(packageToc)) {
-      href = path.join(key, 'toc.yml');
-    } else {
-      href = key + '/';
-    }
-    var packageIndex = path.join(dest, key, 'index.md');
-    if (fs.existsSync(packageIndex)) {
-      topicHref = path.join(key, 'index.md');
-    } else {
-      topicHref = undefined;
-    }
-    return {
-      name: key,
-      href: href,
-      topicHref: topicHref
-    };
-  });
-}

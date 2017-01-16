@@ -30,6 +30,7 @@ build_script:
   - ps: if($env:is_ci_build_enabled)
         {
           node scripts\build.js
+          node scripts\postbuild.js
         }
 
 test:

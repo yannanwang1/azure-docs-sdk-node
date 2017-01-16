@@ -1,3 +1,10 @@
+##Azure SDK for Node.js Documentation
+This repository is used to store content for the docs.ms.com reference site on Azure SDK for Node.js. The YAML files is extracted from source repository to `docs-ref-autogen` folder.
+
+Source Repository: https://github.com/azure/azure-sdk-for-node
+
+Note: Package `azure-arm-datalake-store` in source repository contains some classes with too long file name. They are excluded from `docs-ref-autogen` to avoid breaking DocFX build.
+
 ##Legal Notices
 Microsoft and any contributors grant you a license to the Microsoft documentation and other content
 in this repository under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode),
