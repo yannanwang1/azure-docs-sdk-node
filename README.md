@@ -3,7 +3,7 @@ This repository is used to store content for the docs.ms.com reference site on A
 
 Source Repository: https://github.com/azure/azure-sdk-for-node
 
-Note: Package `azure-arm-datalake-store` in source repository contains some classes with too long file name. They are excluded from `docs-ref-autogen` to avoid breaking DocFX build.
+**Note**: Package `azure-arm-datalake-store` in source repository contains some classes with too long file name. These files are excluded to avoid breaking DocFX build.
 
 ##Legal Notices
 Microsoft and any contributors grant you a license to the Microsoft documentation and other content
