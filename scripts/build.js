@@ -63,6 +63,7 @@ packageJsons.forEach(function (p) {
   child_process.execFileSync('node', ['node_modules/node2docfx/node2docfx.js', tempConfigPath]);
   console.log('Finish generating YAML files for ' + packageName);
 });
+fs.unlink(tempConfigPath);
 
 // 4. copy documentation
 fse.copySync(path.join(src, doc), path.join(dest, doc));
