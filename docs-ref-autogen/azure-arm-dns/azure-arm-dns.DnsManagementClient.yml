@@ -1,0 +1,169 @@
+### YamlMime:JavaScriptReference
+items:
+  - uid: azure-arm-dns.DnsManagementClient
+    id: azure-arm-dns.DnsManagementClient
+    name: DnsManagementClient
+    summary: ''
+    fullName: azure-arm-dns.DnsManagementClient
+    type: Class
+    children:
+      - 'azure-arm-dns.DnsManagementClient.#ctor'
+      - 'azure-arm-dns.DnsManagementClient#apiVersion'
+      - 'azure-arm-dns.DnsManagementClient#acceptLanguage'
+      - 'azure-arm-dns.DnsManagementClient#longRunningOperationRetryTimeout'
+      - 'azure-arm-dns.DnsManagementClient#generateClientRequestId'
+      - 'azure-arm-dns.DnsManagementClient#baseUri'
+      - 'azure-arm-dns.DnsManagementClient#baseUri'
+      - 'azure-arm-dns.DnsManagementClient#credentials'
+      - 'azure-arm-dns.DnsManagementClient#subscriptionId'
+      - 'azure-arm-dns.DnsManagementClient#apiVersion'
+      - 'azure-arm-dns.DnsManagementClient#acceptLanguage'
+      - 'azure-arm-dns.DnsManagementClient#longRunningOperationRetryTimeout'
+      - 'azure-arm-dns.DnsManagementClient#generateClientRequestId'
+      - 'azure-arm-dns.DnsManagementClient#recordSets'
+      - 'azure-arm-dns.DnsManagementClient#zones'
+      - 'azure-arm-dns.DnsManagementClient#models'
+  - id: 'azure-arm-dns.DnsManagementClient.#ctor'
+    uid: 'azure-arm-dns.DnsManagementClient.#ctor'
+    parent: azure-arm-dns.DnsManagementClient
+    name: DnsManagementClient()
+    fullName: azure-arm-dns.DnsManagementClient.DnsManagementClient()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new DnsManagementClient()
+  - uid: 'azure-arm-dns.DnsManagementClient#apiVersion'
+    id: 'azure-arm-dns.DnsManagementClient#apiVersion'
+    parent: azure-arm-dns.DnsManagementClient
+    name: apiVersion
+    summary: ''
+    fullName: azure-arm-dns.DnsManagementClient.apiVersion
+    type: Field
+    syntax:
+      content: apiVersion
+  - uid: 'azure-arm-dns.DnsManagementClient#acceptLanguage'
+    id: 'azure-arm-dns.DnsManagementClient#acceptLanguage'
+    parent: azure-arm-dns.DnsManagementClient
+    name: acceptLanguage
+    summary: ''
+    fullName: azure-arm-dns.DnsManagementClient.acceptLanguage
+    type: Field
+    syntax:
+      content: acceptLanguage
+  - uid: 'azure-arm-dns.DnsManagementClient#longRunningOperationRetryTimeout'
+    id: 'azure-arm-dns.DnsManagementClient#longRunningOperationRetryTimeout'
+    parent: azure-arm-dns.DnsManagementClient
+    name: longRunningOperationRetryTimeout
+    summary: ''
+    fullName: azure-arm-dns.DnsManagementClient.longRunningOperationRetryTimeout
+    type: Field
+    syntax:
+      content: longRunningOperationRetryTimeout
+  - uid: 'azure-arm-dns.DnsManagementClient#generateClientRequestId'
+    id: 'azure-arm-dns.DnsManagementClient#generateClientRequestId'
+    parent: azure-arm-dns.DnsManagementClient
+    name: generateClientRequestId
+    summary: ''
+    fullName: azure-arm-dns.DnsManagementClient.generateClientRequestId
+    type: Field
+    syntax:
+      content: generateClientRequestId
+  - uid: 'azure-arm-dns.DnsManagementClient#baseUri'
+    id: 'azure-arm-dns.DnsManagementClient#baseUri'
+    parent: azure-arm-dns.DnsManagementClient
+    name: baseUri
+    summary: ''
+    fullName: azure-arm-dns.DnsManagementClient.baseUri
+    type: Field
+    syntax:
+      content: baseUri
+  - uid: 'azure-arm-dns.DnsManagementClient#baseUri'
+    id: 'azure-arm-dns.DnsManagementClient#baseUri'
+    parent: azure-arm-dns.DnsManagementClient
+    name: baseUri
+    summary: ''
+    fullName: azure-arm-dns.DnsManagementClient.baseUri
+    type: Field
+    syntax:
+      content: baseUri
+  - uid: 'azure-arm-dns.DnsManagementClient#credentials'
+    id: 'azure-arm-dns.DnsManagementClient#credentials'
+    parent: azure-arm-dns.DnsManagementClient
+    name: credentials
+    summary: ''
+    fullName: azure-arm-dns.DnsManagementClient.credentials
+    type: Field
+    syntax:
+      content: credentials
+  - uid: 'azure-arm-dns.DnsManagementClient#subscriptionId'
+    id: 'azure-arm-dns.DnsManagementClient#subscriptionId'
+    parent: azure-arm-dns.DnsManagementClient
+    name: subscriptionId
+    summary: ''
+    fullName: azure-arm-dns.DnsManagementClient.subscriptionId
+    type: Field
+    syntax:
+      content: subscriptionId
+  - uid: 'azure-arm-dns.DnsManagementClient#apiVersion'
+    id: 'azure-arm-dns.DnsManagementClient#apiVersion'
+    parent: azure-arm-dns.DnsManagementClient
+    name: apiVersion
+    summary: ''
+    fullName: azure-arm-dns.DnsManagementClient.apiVersion
+    type: Field
+    syntax:
+      content: apiVersion
+  - uid: 'azure-arm-dns.DnsManagementClient#acceptLanguage'
+    id: 'azure-arm-dns.DnsManagementClient#acceptLanguage'
+    parent: azure-arm-dns.DnsManagementClient
+    name: acceptLanguage
+    summary: ''
+    fullName: azure-arm-dns.DnsManagementClient.acceptLanguage
+    type: Field
+    syntax:
+      content: acceptLanguage
+  - uid: 'azure-arm-dns.DnsManagementClient#longRunningOperationRetryTimeout'
+    id: 'azure-arm-dns.DnsManagementClient#longRunningOperationRetryTimeout'
+    parent: azure-arm-dns.DnsManagementClient
+    name: longRunningOperationRetryTimeout
+    summary: ''
+    fullName: azure-arm-dns.DnsManagementClient.longRunningOperationRetryTimeout
+    type: Field
+    syntax:
+      content: longRunningOperationRetryTimeout
+  - uid: 'azure-arm-dns.DnsManagementClient#generateClientRequestId'
+    id: 'azure-arm-dns.DnsManagementClient#generateClientRequestId'
+    parent: azure-arm-dns.DnsManagementClient
+    name: generateClientRequestId
+    summary: ''
+    fullName: azure-arm-dns.DnsManagementClient.generateClientRequestId
+    type: Field
+    syntax:
+      content: generateClientRequestId
+  - uid: 'azure-arm-dns.DnsManagementClient#recordSets'
+    id: 'azure-arm-dns.DnsManagementClient#recordSets'
+    parent: azure-arm-dns.DnsManagementClient
+    name: recordSets
+    summary: ''
+    fullName: azure-arm-dns.DnsManagementClient.recordSets
+    type: Field
+    syntax:
+      content: recordSets
+  - uid: 'azure-arm-dns.DnsManagementClient#zones'
+    id: 'azure-arm-dns.DnsManagementClient#zones'
+    parent: azure-arm-dns.DnsManagementClient
+    name: zones
+    summary: ''
+    fullName: azure-arm-dns.DnsManagementClient.zones
+    type: Field
+    syntax:
+      content: zones
+  - uid: 'azure-arm-dns.DnsManagementClient#models'
+    id: 'azure-arm-dns.DnsManagementClient#models'
+    parent: azure-arm-dns.DnsManagementClient
+    name: models
+    summary: ''
+    fullName: azure-arm-dns.DnsManagementClient.models
+    type: Field
+    syntax:
+      content: models
